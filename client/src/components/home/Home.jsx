@@ -59,7 +59,7 @@ export default class Home extends Component {
 						<div className="right-content-holder">
 							<div className="intro-content">
 								<span className="intro-text">Hey, I'm Arun</span>
-								<span className="intro-icon">👋</span>
+								<span className="intro-icon">👋.</span>
 							</div>
 							<p className="intro-text-occ">Front-End Developer & Technologist</p>						
 						</div>
