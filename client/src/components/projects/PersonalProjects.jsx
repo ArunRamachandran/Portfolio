@@ -4,7 +4,7 @@ export default class PersonalProjects extends Component {
 
 	render() {
 
-		return() {
+		return(
 			<div className="personal-projects-wrapper">
 				<div className="personal-project-title-holder"> 
 					<h3>Personal Projects</h3>
@@ -29,6 +29,6 @@ export default class PersonalProjects extends Component {
 				<div className="Open source Projects">
 				</div>
 			</div>
-		}
+		)
 	}
 }
