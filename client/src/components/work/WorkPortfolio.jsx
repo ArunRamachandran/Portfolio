@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import Location from '../location/Location.jsx';
+import Button from '../button/Button.jsx';
 import WiproDigitalLogo from '../../static/wipro-digital-logo.png';
-import CreditCards from '../../static/credit-cards.png';
+import CreditCards from '../../static/credit-cards2.png';
 import O3 from '../../static/Option3.io.png';
-import analytics from '../../static/analytics.png';
+import analytics from '../../static/analytics2.png';
+import startup from '../../static/startup.png';
+import view from '../../static/icons8-binoculars-100.png';
 
 // Content reference: https://gomedici.com/companies/option3-io
 
@@ -17,8 +21,9 @@ export default class WorkPortfolio extends Component {
 						<img src={WiproDigitalLogo} alt="WiproDigitalLogo" height="36"/>
 						<div className="work-description-container">
 							<p className="wipro-digital-description">As the <strong>Technologist</strong> for Wipro Digital, I worked with the one of the largest banking group in the UK to overhaul their digital transformation, developing customer centric user interfaces and banking functionalities.</p>
-							<img src={CreditCards} alt="banking" height="125" width="125"/>
+							<img src={CreditCards} alt="banking" height="200" width="200"/>
 						</div>
+						<Location geoLocation="Chester, United Kingdom"/>
 					</div>
 					<div className="work-page-row-2">
 						<div className="work-history-past">
@@ -28,14 +33,20 @@ export default class WorkPortfolio extends Component {
 									<p>Option3.io</p>
 								</div>
 								<div className="prev-work-description-container">
-									<p className="prev-work-description">Early on at Option3.io, I worked as Senior Product Engineer to design and develop Docube, an end-to-end big data analytics platform.</p>
+									<p className="prev-work-description">Early on at Option3.io, I worked as <strong>Senior Product Engineer</strong> to design and develop Docube, an end-to-end big data visual analytics platform which is now integrated with the inhouse RPA product jiffy.ai</p>
 									<img src={analytics} alt="banking" height="125" width="125"/>
 								</div>
 							</div>
-							<p>Option3.io</p>
+							<Location geoLocation="Banglore, India"/>
 						</div>
 						<div className="personal-project">
-							<p>Happiness Project</p>
+							<div className="corner-ribbon top-right sticky red">personal-project</div>
+							<div className="personal-project-title">
+								<img src={startup} alt="HappinessProject"/>
+								<h3>Happiness Project</h3>
+							</div>
+							<Button className="project-view-button" label="View Project" icon={<img src={view} width="20" height="20"/>}/>
+							<p className="project-description">A digital media platform designed to bring the most delightful contents around the world.</p>
 						</div>
 					</div>
 				</div>

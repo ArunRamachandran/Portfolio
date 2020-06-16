@@ -20,11 +20,10 @@
 		.wipro-digital {
 			text-align: center;
 			padding-top: 5%;
-		    padding-bottom: 5%;
+		    padding-bottom: 2%;
 		    background-color: #f9f9f9;
 		    margin-top: -25px;
 		    box-shadow: 0 5px 9px -6px black;
-		    //font-family: brandon-grotesque, sans-serif;
 
 		    .work-description-container {
 
@@ -41,6 +40,7 @@
 
 			    img {
 			    	padding-left: 4%;
+			    	margin-top: -3%;
 			    }
 		    }
 		}
@@ -51,8 +51,8 @@
 
 			.work-history-past {
 				max-width: 59%;
-			    padding-top: 5%;
-			    padding-bottom: 5%;
+			    padding-top: 2%;
+			    padding-bottom: 2%;
 			    background-color: #f9f9f9;
 			    margin-top: 2%;
 			    box-shadow: 0 5px 9px -6px black;
@@ -64,9 +64,15 @@
 						display: flex;
 						flex-direction: row;
 						align-items: center;
-					    margin-left: 20%;
 					    font-size: 27px;
 					    align-items: center;
+					    justify-content: center;
+
+					    p {
+					    	margin-top: 0;
+					    	margin-bottom: 0;
+					    	margin-left: 5px;
+					    }
 					}
 
 					.prev-work-description-container {
@@ -76,17 +82,92 @@
 						.prev-work-description {
 							text-align: justify;
 					    	padding-left: 5%;
-						    padding-right: 5%;
+						    padding-right: 1%;
+						    padding-top: 20px;
 						    line-height: 1.9;
-						    max-width: 65%;
+						    max-width: 61%;
+						    margin-bottom: 0
 						}
 
 						img {
-							height: 100px;
-    						width: 100px;
+							height: 195px;
+    						width: 195px;
+    						margin-top: -2%;
 						}
 					}
 				}
+			}
+
+			.personal-project {
+				padding-bottom: 2%;
+			    background-color: #f9f9f9;
+			    margin-top: 2%;
+			    margin-left: 2%;
+			    padding: 2%;
+			    box-shadow: 0 5px 9px -6px black;
+			    text-align: justify;
+			    position: relative;
+			    overflow: hidden;
+
+			    .corner-ribbon.top-right{
+			    	position: absolute;
+				    top: 42px;
+				    right: -45px;
+				    left: auto;
+				    transform: rotate(45deg);
+				    -webkit-transform: rotate(46deg);
+				    padding-left: 10%;
+				    padding-right: 10%;
+				    padding-top: 2%;
+				    padding-bottom: 2%;
+				}
+
+				.corner-ribbon.red{background: #e43;}
+
+			    .personal-project-title {
+			    	display: flex;
+			    	flex-direction: row;
+
+			    	img {
+				    	height: 150px;
+				    	width: 150px;
+				    }
+
+				    h3 {
+				    	height: 100px;
+				    	line-height: 100px;
+				    	font-family: 'Bellota', cursive;
+				    }
+			    }
+
+			    .project-view-button {
+			    	top: 0;
+				    right: 0;
+				    border: 1px solid;
+				    padding: 2% 2%;
+				    border-radius: 25px;
+				    text-align: left;
+				    max-width: 33%;
+				    margin-left: auto;
+				    display: flex;
+    				flex-direction: row;
+    				margin-top: -34px;
+
+				    img {
+				    	margin-left: 10px;
+				    }
+			    }
+
+			    .project-view-button:hover {
+			    	cursor: pointer;
+			    	box-shadow: 0 5px 9px -6px black;
+			    	border: 5px;
+					transition: all 0.4s ease 0s;
+			    }
+
+			    .project-description {
+			    	line-height: 1.9;
+			    }
 			}
 		}
 	}
