@@ -26,20 +26,20 @@ export default class AboutMe extends Component {
 
 	render() {
 		const techStack = [
-			<ImageWrapper src={js} alt="Memoji" width="70" height="70" className="right-panel-img"/>,
-			<ImageWrapper src={react} alt="CodeWeb" width="70" height="70" className="code-web"/>,
-			<ImageWrapper src={redux} alt="Memoji" width="70" height="70" className="right-panel-img"/>,
-			<ImageWrapper src={webpack} alt="CodeWeb" width="70" height="70" className="code-web"/>,
-			<ImageWrapper src={html5} alt="CodeWeb" width="70" height="70" className="code-web"/>,
-			<ImageWrapper src={css3} alt="CodeWeb" width="70" height="70" className="code-web"/>,
-			<ImageWrapper src={git} alt="Memoji" width="70" height="70" className="right-panel-img"/>,
-			<ImageWrapper src={aws} alt="CodeWeb" width="70" height="70" className="code-web"/>,
-			<ImageWrapper src={nodejs} alt="Memoji" width="70" height="70" className="right-panel-img"/>,
-			<ImageWrapper src={docker} alt="CodeWeb" width="70" height="70" className="code-web"/>,
-			<ImageWrapper src={linux} alt="Memoji" width="70" height="70" className="right-panel-img"/>,
-			<ImageWrapper src={jenkins} alt="CodeWeb" width="70" height="70" className="code-web"/>,
-			<ImageWrapper src={nginx} alt="Memoji" width="70" height="70" className="right-panel-img"/>,
-			<ImageWrapper src={vsCode} alt="Memoji" width="70" height="70" className="right-panel-img"/>,
+			<ImageWrapper src={js} alt="Memoji" width="100" height="100" className="right-panel-img"/>,
+			<ImageWrapper src={react} alt="CodeWeb" width="100" height="100" className="code-web"/>,
+			<ImageWrapper src={redux} alt="Memoji" width="100" height="100" className="right-panel-img"/>,
+			<ImageWrapper src={webpack} alt="CodeWeb" width="100" height="100" className="code-web"/>,
+			<ImageWrapper src={html5} alt="CodeWeb" width="100" height="100" className="code-web"/>,
+			<ImageWrapper src={css3} alt="CodeWeb" width="100" height="100" className="code-web"/>,
+			<ImageWrapper src={git} alt="Memoji" width="100" height="100" className="right-panel-img"/>,
+			<ImageWrapper src={aws} alt="CodeWeb" width="100" height="100" className="code-web"/>,
+			<ImageWrapper src={nodejs} alt="Memoji" width="100" height="100" className="right-panel-img"/>,
+			<ImageWrapper src={docker} alt="CodeWeb" width="100" height="100" className="code-web"/>,
+			<ImageWrapper src={linux} alt="Memoji" width="100" height="100" className="right-panel-img"/>,
+			<ImageWrapper src={jenkins} alt="CodeWeb" width="100" height="100" className="code-web"/>,
+			<ImageWrapper src={nginx} alt="Memoji" width="100" height="100" className="right-panel-img"/>,
+			<ImageWrapper src={vsCode} alt="Memoji" width="100" height="100" className="right-panel-img"/>,
 		];
 		return (
 			<div className="about-me-wrapper">
@@ -54,7 +54,9 @@ export default class AboutMe extends Component {
 					</div>
 					<div className="about-me-right-panel">
 						<ImageWrapper src={img} alt="Memoji" width="165" height="160" className="right-panel-img"/>
-						<ImageWrapper src={code} alt="CodeWeb" width="50" height="50" className="code-web"/>
+						<div className="position-right">
+							<ImageWrapper src={code} alt="CodeWeb" width="50" height="50" className="code-web" customClassName="position-right"/>
+						</div>
 					</div>
 				</div>
 				<div className="image-slider">

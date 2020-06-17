@@ -9,7 +9,9 @@
 	padding-right: 5%;
 
 	h3 {
-		font-size: 30px;
+		font-size: 52px;
+	    margin-top: 0;
+	    margin-bottom: 0;
 	}
 
 	.about-me-description {
@@ -17,11 +19,20 @@
 		flex-direction: row;
 		padding-left: 10%;
 		padding-right: 7%;
+		margin-top: 3%;
+
+		@media only screen and (max-width: 1050px) {
+	        flex-direction: column;
+	    }
 
 		.about-me-left-panel {
 			display: flex;
 			flex-direction: column;
 			max-width: 50%;
+
+			@media only screen and (max-width: 1050px) {
+		        max-width: 100%;
+		    }
 
 			.description-title {
 				font-size: 25px;
@@ -46,6 +57,11 @@
 			margin-top: auto;
 			margin-bottom: 3%;
 
+			@media only screen and (max-width: 600px) {
+		        margin-left: 0;
+		        margin-top: 20px;
+		    }
+
 			//margin: 0 auto;
 		    background-image: url(../../static/line-bg.png);
 		    background-position: center center;
@@ -69,6 +85,10 @@
 				    position: absolute;
 				}
 			}
+
+			.position-right {
+				margin-left: auto;
+			}
 		}
 	}
 
@@ -77,6 +97,21 @@
 		max-width: 65%;
 		margin-top: 7%;
 
+		@media only screen and (max-width: 600px) {
+	       max-width: 100%;
+	    }
+
+	    .slick-list {
+	    	@media only screen and (max-width: 600px) {
+		       max-height: 140px;
+		       max-width: 80%;
+		       margin: auto;
+		    }
+	    }
+
+		.slick-track {
+			//max-width: 81%;
+		}
 		.slick-slide {
 			height: 120px;
 		}
@@ -92,8 +127,8 @@
 		.image-chopper {
 			height: 0;
 			overflow: visible;
-			margin-right: 20px;
-			margin-left: 20px;
+			// margin-right: 20px;
+			// margin-left: 20px;
 		}
 	}
 }

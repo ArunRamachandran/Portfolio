@@ -9,6 +9,11 @@
 	padding-left: 10%;
     padding-right: 12%;
 
+	@media only screen and (max-width: 600px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }    
+
 	.work-title {
 		margin-right: auto;
 	    font-size: 70px;
@@ -25,10 +30,18 @@
 		    margin-top: -25px;
 		    box-shadow: 0 5px 9px -6px black;
 
+		    @media only screen and (max-width: 600px) {
+		        padding-top: 13%;
+		    }
+
 		    .work-description-container {
 
 		    	display: flex;
 		    	flex-direction: row;
+
+		    	@media only screen and (max-width: 600px) {
+			        flex-direction: column;
+			    }
 
 		    	.wipro-digital-description {
 		    		text-align: justify;
@@ -36,11 +49,19 @@
 				    padding-right: 5%;
 				    line-height: 1.9;
 				    max-width: 58%;
+
+				    @media only screen and (max-width: 600px) {
+				        max-width: 100%;
+				    }
 			    }
 
 			    img {
 			    	padding-left: 4%;
 			    	margin-top: -3%;
+
+			    	@media only screen and (max-width: 600px) {
+			        	margin: auto;
+			    	}
 			    }
 		    }
 		}
@@ -48,6 +69,10 @@
 		.work-page-row-2 {
 			display: flex;
 			flex-direction: row;
+
+			@media only screen and (max-width: 600px) {
+		        flex-direction: column;
+		    }
 
 			.work-history-past {
 				max-width: 59%;
@@ -57,6 +82,12 @@
 			    margin-top: 2%;
 			    box-shadow: 0 5px 9px -6px black;
 			    text-align: justify;
+
+			    @media only screen and (max-width: 600px) {
+			        max-width: 100%;
+				    margin-top: 20px;
+				    padding-top: 25px;
+			    }
 
 				.prev-experience-container {
 
@@ -79,6 +110,10 @@
 						display: flex;
 						flex-direction: row;
 
+						@media only screen and (max-width: 600px) {
+					        flex-direction: column;
+					    }
+
 						.prev-work-description {
 							text-align: justify;
 					    	padding-left: 5%;
@@ -86,13 +121,23 @@
 						    padding-top: 20px;
 						    line-height: 1.9;
 						    max-width: 61%;
-						    margin-bottom: 0
+						    margin-bottom: 0;
+
+						    @media only screen and (max-width: 600px) {
+						        max-width: 100%;
+    							padding-right: 6%;
+						    }
 						}
 
 						img {
 							height: 195px;
     						width: 195px;
     						margin-top: -2%;
+
+    						@media only screen and (max-width: 600px) {
+						        margin: auto;
+    							width: 240px;
+						    }
 						}
 					}
 				}
@@ -108,6 +153,15 @@
 			    text-align: justify;
 			    position: relative;
 			    overflow: hidden;
+
+			    @media only screen and (max-width: 600px) {
+			        padding-top: 25px;
+				    padding-left: 5%;
+				    padding-right: 6%;
+				    margin-top: 20px;
+				    margin-left: 0;
+				    margin-bottom: 20px;
+			    }
 
 			    .corner-ribbon.top-right{
 			    	position: absolute;
@@ -128,15 +182,29 @@
 			    	display: flex;
 			    	flex-direction: row;
 
+			    	@media only screen and (max-width: 600px) {
+				        flex-direction: column;
+				    }
+
 			    	img {
 				    	height: 150px;
 				    	width: 150px;
+
+				    	@media only screen and (max-width: 600px) {
+					        margin: auto;
+					    }
 				    }
 
 				    h3 {
 				    	height: 100px;
 				    	line-height: 100px;
 				    	font-family: 'Bellota', cursive;
+
+				    	@media only screen and (max-width: 600px) {
+					       	margin: auto;
+    						font-size: 27px;
+    						padding-bottom: 20px;
+					    }
 				    }
 			    }
 
@@ -153,9 +221,22 @@
     				flex-direction: row;
     				margin-top: -34px;
 
+    				@media only screen and (max-width: 600px) {
+				       	text-align: none;
+				       	max-width: 100%;
+				       	margin-left: 20px;
+				       	margin-right: 20px;
+				       	justify-content: center;
+				       	cursor: pointer;
+				    	box-shadow: 0 5px 9px -6px black;
+				    	border: 5px;
+						transition: all 0.4s ease 0s;
+				    }
+
 				    img {
 				    	margin-left: 10px;
 				    }
+
 			    }
 
 			    .project-view-button:hover {

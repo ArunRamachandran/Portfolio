@@ -1,21 +1,15 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Home from './components/home/Home.jsx';
-import AboutMe from './components/info/AboutMe.jsx';
-import PersonalProjects from './components/projects/PersonalProjects.jsx';
-import WorkPortfolio from './components/work/WorkPortfolio.jsx';
+import Portfolio from './Portfolio.jsx';
 
-class Portfolio extends Component {
+class App extends Component {
 	render() {
 		return (
 			<div>
-				<Home/>
-				<AboutMe/>
-				<WorkPortfolio/>
-				{/*<PersonalProjects/>*/}
+				<Portfolio/>
 			</div>
 		)
 	}
 }
 
-ReactDOM.render(<Portfolio/>, document.getElementById("root"));
+ReactDOM.render(<App/>, document.getElementById("root"));

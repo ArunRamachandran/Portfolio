@@ -18,7 +18,8 @@ export default class AppSlick extends Component {
 	      slidesToScroll: 1,
 	      autoplay: true,
 	      autoplaySpeed: 2000,
-	      pauseOnHover: true
+	      pauseOnHover: true,
+	      variableWidth: true
 	    };
 
 	    return(
@@ -26,7 +27,7 @@ export default class AppSlick extends Component {
 	    		<Slider {...settings}>
 	    			{this.props.elements && this.props.elements.map
 	    				((ele) => 
-	    					<div>
+	    					<div className="padded-mobile-width">
 	    						{ele}
 	    					</div>
 	    				)

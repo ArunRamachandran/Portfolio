@@ -22,7 +22,7 @@ export default class Home extends Component {
 
 	    if (this.prev > window.scrollY) {
 	        // scrolling up
-	        this.state.isComponentHidden && this.enable();
+	        // this.state.isComponentHidden && this.enable();
 	    } else if (this.prev < window.scrollY) {
 	        // scrolling down
 	        !this.state.isComponentHidden && this.disable();
@@ -42,11 +42,12 @@ export default class Home extends Component {
 		})
 	}
 
+
 	render() {
 		return (
 			<div className="portfoliio-container">
 				<div className="nav-bar">
-					<div className="nav-bar-item">
+					<div className="nav-bar-item" onClick={() => window.open("https://www.linkedin.com/in/arun-ramachandran/", "_blank")}> 
 						<span>Say Hello</span>
 					</div>
 				</div>
