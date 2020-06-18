@@ -41,13 +41,13 @@ module.exports = {
                 ]
             },
             { 
-                test: /\.(png|woff|woff2|eot|ttf|svg)$/, 
+                test: /\.(jpg|png|woff|woff2|eot|ttf|svg)$/, 
                 loader: 'file-loader' 
             },
             {
                 test: /\.less$/,
                 exclude: /node_modules/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
+                use: ['style-loader', 'css-loader', 'less-loader']
             }
             
         ]

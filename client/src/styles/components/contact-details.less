@@ -33,7 +33,7 @@
     	.github-projects {
 	    	top: 0;
 		    right: 0;
-		    padding: 2% 2%;
+		    padding: 10px;
 		    border-radius: 25px;
 		    text-align: left;
 		    margin-left: auto;
@@ -64,12 +64,117 @@
 		    	margin-left: 10px;
 		    }
 
+		    span {
+		    	margin: auto;
+		    }
+
 	    }
     }
 
     .contact-info {
+	    text-align: center;
+	    margin-top: 2%;
+	    min-width: 87%;
+
+	    @media only screen and (max-width: 600px) {
+			min-width: 100%;
+		}
+
+	    .colloboration-panel {
+
+		    border-radius: 2px;
+		    padding-bottom: 10px;
+		    background-color: #f9f9f9;
+
+	    	.colloboration-text-wrapper {
+	    		display: flex;
+	    		flex-direction: row;
+
+	    		@media only screen and (max-width: 600px) {
+	    			flex-direction: column;
+	    		}
+
+	    		.text-description {
+	    			max-width: 50%;
+	    			padding-left: 20px;
+				    padding-right: 20px;
+				    line-height: 1.9;
+
+	    			@media only screen and (max-width: 600px) {
+		    			max-width: 100%;
+		    		}
+	    		}
+
+	    		.message-link {
+	    			padding-right: 25px;
+				    padding-top: 10px;
+				    padding-bottom: 10px;
+				    border-radius: 25px;
+				    text-align: left;
+				    margin-left: auto;
+				    display: flex;
+				    flex-direction: row;
+				    margin-top: -34px;
+				    box-shadow: 0 7px 14px -7px black;
+				    border: 5px;
+				    transition: all 0.4s ease 0s;
+				    margin: auto;
+				    background: #fff;
+
+				    .button-inline-label {
+				    	padding-left: 20px;
+    					padding-right: 10px;
+				    }
+	    		}
+
+	    		.message-link:hover {
+	    			cursor: pointer;
+	    		}
+	    	}
+	    }
+
+	    .social-info {
+	    	p {
+	    		font-size: 25px;
+	    		border-bottom: 2px solid;
+			    max-width: 40%;
+			    margin: auto;
+			    padding: 20px;
+	    	}
+	    	.social-icons-panel {
+		    	margin-top: 3%;
+
+		    	img {
+		    		padding: 20px;
+		    	}
+
+		    	img:hover {
+		    		cursor: pointer;
+		    	}
+		    }
+	    }
+    }
+
+    .page-footer {
     	min-width: 100%;
 	    text-align: center;
-	    background-color: gray;
+	    margin-top: auto;
+	    background-color: #f9f9f9;
+
+	    .footer-nav {
+	    	padding: 20px;
+
+	    	.hire-me-link {
+	    		text-decoration: underline;
+	    	}
+
+	    	.amazing-text {
+	    		font-family: 'Bellota', cursive;
+	    		span {
+	    			padding-left: 5px;
+	    			padding-right: 5px;
+	    		}
+	    	}
+	    }
     }
 }
