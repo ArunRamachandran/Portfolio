@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Home from './components/home/Home.jsx';
 import AboutMe from './components/info/AboutMe.jsx';
-import PersonalProjects from './components/projects/PersonalProjects.jsx';
 import WorkPortfolio from './components/work/WorkPortfolio.jsx';
+import ContactDetails from './components/contact-details/ContactDetails.jsx';
 
 export default class Portfolio extends Component {
 	
@@ -13,6 +13,7 @@ export default class Portfolio extends Component {
 				<Home/>
 				<AboutMe/>
 				<WorkPortfolio/>
+				<ContactDetails/>
 			</div>
 		);
 	}	

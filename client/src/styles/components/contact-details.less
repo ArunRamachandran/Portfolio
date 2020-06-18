@@ -1,0 +1,75 @@
+.contact-me-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	// margin: 0 auto;
+	align-items: center;
+	padding-top: 5%;
+	// padding-left: 5%;
+	// padding-right: 5%;
+
+    .open-source-info {
+    	background-image: url('../../static/github-bg.png');
+    	background-size: cover;
+	    background-position-x: 50%;
+	    background-position-y: 50%;
+	    text-align: center;
+	    justify-content: cener;
+	    min-width: 87%;
+	    padding-bottom: 10px;
+
+    	h3 {
+    		color: #fff;
+    		font-size: 46px;
+    		margin-top: 10px;
+    		margin-bottom: 10px;
+    	}
+
+    	h4 {
+    		color: #fff;
+    		font-size: 25px;
+    	}
+
+    	.github-projects {
+	    	top: 0;
+		    right: 0;
+		    padding: 2% 2%;
+		    border-radius: 25px;
+		    text-align: left;
+		    margin-left: auto;
+		    display: flex;
+			flex-direction: row;
+			margin-top: -34px;
+			box-shadow: 0 5px 9px -6px black;
+	    	border: 5px;
+			transition: all 0.4s ease 0s;
+			margin: auto;
+		    padding-right: 0;
+		    max-width: 17%;
+		    background: #fff;
+
+			@media only screen and (max-width: 600px) {
+		       	text-align: none;
+		       	max-width: 100%;
+		       	margin-left: 20px;
+		       	margin-right: 20px;
+		       	justify-content: center;
+		       	cursor: pointer;
+		    	box-shadow: 0 5px 9px -6px black;
+		    	border: 5px;
+				transition: all 0.4s ease 0s;
+		    }
+
+		    img {
+		    	margin-left: 10px;
+		    }
+
+	    }
+    }
+
+    .contact-info {
+    	min-width: 100%;
+	    text-align: center;
+	    background-color: gray;
+    }
+}

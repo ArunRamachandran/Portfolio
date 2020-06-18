@@ -12,6 +12,10 @@ import view from '../../static/icons8-binoculars-100.png';
 
 export default class WorkPortfolio extends Component {
 
+	navigateToHappinessProject = () => {
+		 window.open("https://happiness-project.net/", "_blank");
+	}
+
 	render() {
 		return (
 			<div className="work-portfolio-wrapper">
@@ -45,7 +49,7 @@ export default class WorkPortfolio extends Component {
 								<img src={startup} alt="HappinessProject"/>
 								<h3>Happiness Project</h3>
 							</div>
-							<Button className="project-view-button" label="View Project" icon={<img src={view} width="20" height="20"/>}/>
+							<Button className="project-view-button" label="View Project" icon={<img src={view} width="20" height="20"/>} onClick={this.navigateToHappinessProject}/>
 							<p className="project-description">A digital media platform designed to bring the most delightful contents around the world.</p>
 						</div>
 					</div>
