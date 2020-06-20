@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "http://ArunRamachandran.github.io/Portfolio",
   "version": "0.0.1",
   "description": "Personl portfolio",
   "main": "index.js",
