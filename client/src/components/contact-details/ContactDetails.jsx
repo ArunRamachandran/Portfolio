@@ -18,7 +18,7 @@ export default class Contacts extends Component {
 	}
 
 	triggerEmail = () => {
-		window.location = "mailto:myself.arunkr@gmail.com";
+		window.location = "mailto:arunk.ramachandran6@gmail.com";
 	}
 
 	render() {
