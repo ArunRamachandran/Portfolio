@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio-v2",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "v2", "run", "dev"],
+      "port": 5173
+    },
+    {
+      "name": "portfolio-build",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--yes", "serve", "build", "-l", "4173"],
+      "port": 4173
+    }
+  ]
+}
