@@ -234,48 +234,6 @@ npm run deploy
 
 ---
 
-## 🌐 Custom Domain & HTTPS Setup
-
-### Domain Configuration
-
-**Domain:** `arunkr.com`  
-**Provider:** Namecheap  
-**Protocol:** HTTPS (automatic via GitHub Pages)
-
-### DNS Records
-
-**A Records (pointing to GitHub Pages):**
-```
-Type: A
-Name: @
-Values:
-  - 185.199.108.153
-  - 185.199.109.153
-  - 185.199.110.153
-  - 185.199.111.153
-```
-
-**CNAME Record (for www subdomain):**
-```
-Type: CNAME
-Name: www
-Value: parkingpage.namecheap.com
-```
-
-### GitHub Pages Configuration
-
-1. Go to: Repository → Settings → Pages
-2. Source: Deploy from a branch (`gh-pages`)
-3. Custom domain: `arunkr.com`
-4. Enforce HTTPS: ✅ Enabled
-
-**Result:**
-- Visitors see `https://arunkr.com`
-- URL stays on custom domain (no redirect to GitHub URL)
-- Automatic SSL/TLS certificate via Let's Encrypt
-
----
-
 ## 📝 Git Workflow
 
 ### Development Branches
