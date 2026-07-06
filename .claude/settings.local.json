@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(npx vite *)",
+      "Bash(git checkout *)",
+      "Bash(git mv *)",
+      "Bash(npm run *)",
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:hanzo.framer.website)",
+      "Bash(grep -i vsc echo \"---tb azure---\" grep -oiE \"Tb[A-Za-z]*azure[A-Za-z]*\" node_modules/react-icons/tb/index.d.ts echo \"---bi azure---\" grep -oiE \"Bi[A-Za-z]*azure[A-Za-z]*\" node_modules/react-icons/bi/index.d.ts echo \"--- all dirs ---\" ls node_modules/react-icons/)",
+      "Bash(sips -g pixelWidth -g pixelHeight src/assets/arun.jpg)",
+      "Bash(curl -s http://localhost:4173)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(git add *)",
+      "Bash(git reset *)",
+      "Bash(git -C /Users/kareparanmbilramachandranarun/Personal/Portfolio remote -v)",
+      "Bash(git -C /Users/kareparanmbilramachandranarun/Personal/Portfolio show 09e210a)",
+      "Bash(git commit -m 'Add CNAME for arunkr.com custom domain *)",
+      "Bash(git branch *)",
+      "Bash(pkill -f \"npm run preview\")"
+    ]
+  }
+}
