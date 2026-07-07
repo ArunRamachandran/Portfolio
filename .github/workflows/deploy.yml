@@ -20,11 +20,11 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies (v2)
-        run: cd v2 && npm ci
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Build (v2)
-        run: cd v2 && npm run build
+      - name: Build
+        run: npm run build
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
