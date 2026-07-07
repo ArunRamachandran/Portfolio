@@ -1,0 +1,255 @@
+.work-portfolio-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-left: 10%;
+    padding-right: 12%;
+
+	@media only screen and (max-width: 600px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }    
+
+	.work-title {
+		margin-right: auto;
+	    font-size: 70px;
+	    margin-top: 0;
+	    margin-bottom: 0;	
+	    z-index: 10;
+	}
+	.work-page {
+		.wipro-digital {
+			text-align: center;
+			padding-top: 5%;
+		    padding-bottom: 2%;
+		    background-color: #f9f9f9;
+		    margin-top: -25px;
+		    box-shadow: 0 5px 9px -6px black;
+
+		    @media only screen and (max-width: 600px) {
+		        padding-top: 13%;
+		    }
+
+		    .work-description-container {
+
+		    	display: flex;
+		    	flex-direction: row;
+
+		    	@media only screen and (max-width: 600px) {
+			        flex-direction: column;
+			    }
+
+		    	.wipro-digital-description {
+		    		text-align: justify;
+			    	padding-left: 5%;
+				    padding-right: 5%;
+				    line-height: 1.9;
+				    max-width: 58%;
+
+				    @media only screen and (max-width: 600px) {
+				        max-width: 100%;
+				    }
+			    }
+
+			    img {
+			    	padding-left: 4%;
+			    	margin-top: -3%;
+
+			    	@media only screen and (max-width: 600px) {
+			        	margin: auto;
+			    	}
+			    }
+		    }
+		}
+
+		.work-page-row-2 {
+			display: flex;
+			flex-direction: row;
+
+			@media only screen and (max-width: 600px) {
+		        flex-direction: column;
+		    }
+
+			.work-history-past {
+				max-width: 59%;
+			    padding-top: 2%;
+			    padding-bottom: 2%;
+			    background-color: #f9f9f9;
+			    margin-top: 2%;
+			    box-shadow: 0 5px 9px -6px black;
+			    text-align: justify;
+
+			    @media only screen and (max-width: 600px) {
+			        max-width: 100%;
+				    margin-top: 20px;
+				    padding-top: 25px;
+			    }
+
+				.prev-experience-container {
+
+					.prev-work-title-wrapper {
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+					    font-size: 27px;
+					    align-items: center;
+					    justify-content: center;
+
+					    p {
+					    	margin-top: 0;
+					    	margin-bottom: 0;
+					    	margin-left: 5px;
+					    }
+					}
+
+					.prev-work-description-container {
+						display: flex;
+						flex-direction: row;
+
+						@media only screen and (max-width: 600px) {
+					        flex-direction: column;
+					    }
+
+						.prev-work-description {
+							text-align: justify;
+					    	padding-left: 5%;
+						    padding-right: 1%;
+						    padding-top: 20px;
+						    line-height: 1.9;
+						    max-width: 61%;
+						    margin-bottom: 0;
+
+						    @media only screen and (max-width: 600px) {
+						        max-width: 100%;
+    							padding-right: 6%;
+						    }
+						}
+
+						img {
+							height: 195px;
+    						width: 195px;
+    						margin-top: -2%;
+
+    						@media only screen and (max-width: 600px) {
+						        margin: auto;
+    							width: 240px;
+						    }
+						}
+					}
+				}
+			}
+
+			.personal-project {
+				padding-bottom: 2%;
+			    background-color: #f9f9f9;
+			    margin-top: 2%;
+			    margin-left: 2%;
+			    padding: 2%;
+			    box-shadow: 0 5px 9px -6px black;
+			    text-align: justify;
+			    position: relative;
+			    overflow: hidden;
+
+			    @media only screen and (max-width: 600px) {
+			        padding-top: 25px;
+				    padding-left: 5%;
+				    padding-right: 6%;
+				    margin-top: 20px;
+				    margin-left: 0;
+				    margin-bottom: 20px;
+			    }
+
+			    .corner-ribbon.top-right{
+			    	position: absolute;
+				    top: 42px;
+				    right: -45px;
+				    left: auto;
+				    transform: rotate(45deg);
+				    -webkit-transform: rotate(46deg);
+				    padding-left: 10%;
+				    padding-right: 10%;
+				    padding-top: 2%;
+				    padding-bottom: 2%;
+				}
+
+				.corner-ribbon.red{background: #e43;}
+
+			    .personal-project-title {
+			    	display: flex;
+			    	flex-direction: row;
+
+			    	@media only screen and (max-width: 600px) {
+				        flex-direction: column;
+				    }
+
+			    	img {
+				    	height: 150px;
+				    	width: 150px;
+
+				    	@media only screen and (max-width: 600px) {
+					        margin: auto;
+					    }
+				    }
+
+				    h3 {
+				    	height: 100px;
+				    	line-height: 100px;
+				    	font-family: 'Bellota', cursive;
+
+				    	@media only screen and (max-width: 600px) {
+					       	margin: auto;
+    						font-size: 27px;
+    						padding-bottom: 20px;
+					    }
+				    }
+			    }
+
+			    .project-view-button {
+			    	top: 0;
+				    right: 0;
+				    border: 1px solid;
+				    padding: 2% 2%;
+				    border-radius: 25px;
+				    text-align: left;
+				    max-width: 33%;
+				    margin-left: auto;
+				    display: flex;
+    				flex-direction: row;
+    				margin-top: -34px;
+
+    				@media only screen and (max-width: 600px) {
+				       	text-align: none;
+				       	max-width: 100%;
+				       	margin-left: 20px;
+				       	margin-right: 20px;
+				       	justify-content: center;
+				       	cursor: pointer;
+				    	box-shadow: 0 5px 9px -6px black;
+				    	border: 5px;
+						transition: all 0.4s ease 0s;
+				    }
+
+				    img {
+				    	margin-left: 10px;
+				    }
+
+			    }
+
+			    .project-view-button:hover {
+			    	cursor: pointer;
+			    	box-shadow: 0 5px 9px -6px black;
+			    	border: 5px;
+					transition: all 0.4s ease 0s;
+			    }
+
+			    .project-description {
+			    	line-height: 1.9;
+			    }
+			}
+		}
+	}
+}

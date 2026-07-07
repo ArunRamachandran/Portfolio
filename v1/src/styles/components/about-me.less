@@ -1,0 +1,134 @@
+.about-me-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0 auto;
+	align-items: center;
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	h3 {
+		font-size: 52px;
+	    margin-top: 0;
+	    margin-bottom: 0;
+	}
+
+	.about-me-description {
+		display: flex;
+		flex-direction: row;
+		padding-left: 10%;
+		padding-right: 7%;
+		margin-top: 3%;
+
+		@media only screen and (max-width: 1050px) {
+	        flex-direction: column;
+	    }
+
+		.about-me-left-panel {
+			display: flex;
+			flex-direction: column;
+			max-width: 50%;
+
+			@media only screen and (max-width: 1050px) {
+		        max-width: 100%;
+		    }
+
+			.description-title {
+				font-size: 25px;
+			}
+
+			.description-content {
+			    line-height: 1.8;
+			    padding-left: 25px;
+			    padding-bottom: 22px;
+			    padding-top: 22px;
+			    padding-right: 22px;
+			    border-left: 4px solid;
+			    background-color: #f9f9f9;
+			    border-radius: 2px;
+			}
+		}
+
+		.about-me-right-panel {
+			display: flex;
+			flex-direction: row;
+			margin-left: 9%;
+			margin-top: auto;
+			margin-bottom: 3%;
+
+			@media only screen and (max-width: 600px) {
+		        margin-left: 0;
+		        margin-top: 20px;
+		    }
+
+			//margin: 0 auto;
+		    background-image: url(../../static/line-bg.png);
+		    background-position: center center;
+		    background-repeat: repeat-x;
+		    position: relative;
+		    background-size: 2px auto;
+		    min-height: 155px;
+
+			.image-chopper { 
+				width: 157px;
+				height: 160px;
+				margin-right: 0;
+
+				.right-panel-img {
+					background-color: #f1f1f1;
+				}
+
+				.code-web {
+					margin-top: 36%;
+				    right: 0;
+				    position: absolute;
+				}
+			}
+
+			.position-right {
+				margin-left: auto;
+			}
+		}
+	}
+
+	.image-slider{
+		max-height: 20%;
+		max-width: 65%;
+		margin-top: 7%;
+
+		@media only screen and (max-width: 600px) {
+	       max-width: 100%;
+	    }
+
+	    .slick-list {
+	    	@media only screen and (max-width: 600px) {
+		       max-height: 140px;
+		       max-width: 80%;
+		       margin: auto;
+		    }
+	    }
+
+		.slick-track {
+			//max-width: 81%;
+		}
+		.slick-slide {
+			height: 120px;
+		}
+
+		.slick-dots {
+			visibility: hidden;
+		}
+
+		.slick-arrow {
+			visibility: hidden;
+		}
+
+		.image-chopper {
+			height: 0;
+			overflow: visible;
+			// margin-right: 20px;
+			// margin-left: 20px;
+		}
+	}
+}

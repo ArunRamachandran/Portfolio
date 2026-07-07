@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- < AR /> favicon -->
+  <g transform="translate(50, 50)">
+    <!-- Opening bracket < -->
+    <text x="-28" y="10" font-size="48" font-weight="bold" fill="#b4502b" font-family="'Courier New', monospace">&lt;</text>
+
+    <!-- AR in center -->
+    <text x="-12" y="12" font-size="32" font-weight="800" fill="#1c1a17" font-family="'Inter', sans-serif">AR</text>
+
+    <!-- Closing bracket /> -->
+    <text x="8" y="10" font-size="48" font-weight="bold" fill="#b4502b" font-family="'Courier New', monospace">/&gt;</text>
+  </g>
+</svg>

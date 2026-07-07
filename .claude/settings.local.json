@@ -21,7 +21,14 @@
       "Bash(git -C /Users/kareparanmbilramachandranarun/Personal/Portfolio show 09e210a)",
       "Bash(git commit -m 'Add CNAME for arunkr.com custom domain *)",
       "Bash(git branch *)",
-      "Bash(pkill -f \"npm run preview\")"
+      "Bash(pkill -f \"npm run preview\")",
+      "Bash(git ls-tree *)",
+      "Bash(git commit -m 'Setup GitHub Actions for automatic deployment *)",
+      "Bash(git push *)",
+      "Bash(pkill -f \"vite\")",
+      "Bash(pkill -f \"node\")",
+      "Bash(curl -v http://localhost:5173/)",
+      "Bash(curl -I http://localhost:5173)"
     ]
   }
 }
