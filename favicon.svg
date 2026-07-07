@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100">
+  <!-- < AR /> favicon with proper spacing -->
+  <text x="45" y="60" font-size="40" font-weight="bold" fill="#b4502b" font-family="'Courier New', monospace" text-anchor="end">&lt;</text>
+
+  <!-- AR perfectly centered with spacing -->
+  <text x="80" y="60" font-size="36" font-weight="800" fill="#1c1a17" font-family="'Inter', sans-serif" text-anchor="middle">AR</text>
+
+  <!-- Closing bracket /> -->
+  <text x="115" y="60" font-size="40" font-weight="bold" fill="#b4502b" font-family="'Courier New', monospace" text-anchor="start">/&gt;</text>
+</svg>

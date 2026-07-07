@@ -1,52 +1,124 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161471219-2"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-161471219-2');
-        </script>
-
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-    </head>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arun Ramachandran — Front-End Engineer (V1 - Legacy)</title>
+    <meta name="description" content="Arun Ramachandran — Front-end software engineer. V1 Legacy Portfolio." />
+    <meta name="robots" content="noindex, follow" />
     <style>
-        body { margin: 0 }
-        .version-toggle-legacy {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 999;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 14px;
-            border-radius: 999px;
-            border: 1px solid rgba(0,0,0,0.12);
-            background: rgba(255,255,255,0.9);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 12.5px;
-            color: #57524a;
-            text-decoration: none;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .version-toggle-legacy:hover { color: #b4502b; border-color: #b4502b; }
-        .version-toggle-legacy__dot { width: 6px; height: 6px; border-radius: 50%; background: #b4502b; flex-shrink: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        a {
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+            border: 2px solid #667eea;
+        }
+        .btn-secondary:hover {
+            background: #f9f9f9;
+            transform: translateY(-2px);
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 4px;
+            text-align: left;
+        }
+        .note p {
+            margin: 0;
+            font-size: 14px;
+            color: #856404;
+        }
     </style>
+</head>
 <body>
-    <a class="version-toggle-legacy" href="../">
-        <span class="version-toggle-legacy__dot"></span>
-        You're viewing the 2020 original &mdash; see the latest
-    </a>
-    <div id="root"></div>
-<script type="text/javascript" src="./main.min.js"></script></body>
+    <div class="container">
+        <div class="badge">V1 - Legacy Portfolio</div>
+        <h1>Welcome to the V1 Archive</h1>
+        <p>
+            This is the legacy version of Arun Ramachandran's portfolio, built with Webpack and React.
+            It's preserved here for historical purposes.
+        </p>
+        <p>
+            The current portfolio has been completely redesigned with modern technologies
+            including React 18, TypeScript, and Vite for an enhanced experience.
+        </p>
+
+        <div class="buttons">
+            <a href="/" class="btn-primary">← Back to Current Portfolio</a>
+            <a href="https://github.com/ArunRamachandran/Portfolio" class="btn-secondary">View on GitHub</a>
+        </div>
+
+        <div class="note">
+            <p>
+                <strong>📝 Note:</strong> This V1 version is maintained for archival purposes only.
+                For the latest portfolio experience, please visit the main site.
+            </p>
+        </div>
+    </div>
+</body>
 </html>
