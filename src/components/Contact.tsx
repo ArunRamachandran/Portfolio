@@ -40,8 +40,7 @@ export default function Contact() {
       <div className="contact__inner">
         <SectionLabel index="Get In Touch" title="Let's build something" />
         <p className="contact__body">
-          Building something and think I could help, or just want to talk shop about design systems?
-          I'm always happy to chat — I'll even buy the coffee.
+          Building something and think I could help, or just want to talk about design systems or frontend? Or do you have an exciting opportunity to work with? I'm always happy to chat. I'll even buy the coffee.
         </p>
         <ul className="contact__links">
           {links.map((link) => (
